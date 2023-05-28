@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Black & Scholes Calculator</h1>
+    <form action="/" method="POST">
+        <table>
+          <tr>
+            <td>Spot Price :</td>
+            <td><input type="number" name="num1" value="300" placeholder="Current stock Price" id=""></td>
+            <td><i>The current base price of the instrument</i></td>
+          </tr>
+          <tr>
+            <td>Strike Price :</td>
+            <td><input type="number" name="num2" value="250" placeholder="Strike Price" id=""></td>
+            <td><i>The price at which the underlying instrument will be exchanged</i></td>
+          </tr>
+          <tr>
+            <td>Expiry Days :</td>
+            <td><input type="number" step="0.01" value="0.5" name="num3" placeholder="Enter num3" id=""></td>
+          </tr>
+          <tr>
+            <td>Volatility :</td>
+            <td><input type="number" step="0.01" name="num4" value="0.35" placeholder="Enter num4" id=""></td>
+          </tr>
+          <tr>
+            <td>Interest :</td>
+            <td><input type="number" step="0.01" name="num5" value="0.03" placeholder="risk free interest rate" id=""></td>
+          </tr>
+          <tr>
+            <td>Dividend :</td>
+            <td><input type="number" step="0.01" name="num6" value="0.00" placeholder="Enter num6" id=""></td>
+          </tr>
+          <tr>
+            <td>Call / Put :</td>
+            <td><input type="text" name="num7" value="Call" placeholder="Whether Call or Put?" id=""></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Calculate</button></td>
+          </tr>
+        </table>
+    </form>
+</body>
+
+
+<body>
+    <h1>The result is {{Calculate}}</h1>
+</body>
+
+</html>
